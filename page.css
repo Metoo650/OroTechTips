@@ -21,8 +21,12 @@
 }
 
 body {
-  background: url("/images/wood.jpg");
+  background: url("images/wood.jpg");
   /*background: black;*/
+}
+
+.logo {
+  text-decoration: none;
 }
 
 .logo:hover {
@@ -35,6 +39,7 @@ body {
   font-weight: 350;
   transition: 1s;
 }
+
 .t {
   color: deeppink;
 }
@@ -58,6 +63,7 @@ body {
 .h {
   color: deepskyblue;
 }
+
 .description:hover {
   transform: scale(0.9);
   font-size: 17px;
@@ -77,20 +83,21 @@ header {
 
 .nav-info {
   margin-top: 15%;
-  margin-left: 46%;
-  margin-right: 50%;
+  margin-left: 42%;
+  margin-right: 40%;
   white-space: nowrap;
 }
 
-.nav-info h2 a {
+.nav-info h2 {
   color: var(--main-color);
+  margin-left: -35px;
 }
 
 .nav-info h3 {
-  margin-left: -25px;
+  margin-left: -55px;
   margin-top: 0.5rem;
   color: yellow;
-  
+
 }
 
 .navlist {
@@ -103,7 +110,7 @@ header {
   z-index: 1000;
 }
 
-.navlist li a{
+.navlist li a {
   font-weight: 500;
   margin-left: 7px;
 }
@@ -126,24 +133,16 @@ header {
   margin-right: -35px;
 }
 
-
-
-/*.closebtn {
-  position: absolute;
-  font-size: 55px;
-  right: 0;
-  top: -8px;
-  display: block;
-}*/
-
 .shuffle {
   margin-right: 3px;
   font-size: 40px;
 }
+
 .home {
   margin-top: 80%;
   margin-left: 20px;
 }
+
 .home h2 {
   color: yellow;
   background: black;
@@ -151,134 +150,58 @@ header {
   padding: 3px;
   transition: all 1s;
 }
+
 .home h2:hover {
   transform: scale(0.9);
 }
+
 .posts {
   margin-top: 70%;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 30px;
   align-items: center;
-  
+
 }
+
 .box {
   width: 335px;
   margin-right: 10px;
   background: gren;
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
+
 .box img {
   width: 335px;
   height: 220px;
   margin-left: 12px;
   border-radius: 7px;
   border: 0.8px solid lime;
-}
-.box h2 {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 7px;
-  margin-left: 22px;
-  margin-top: 10px;
-}
-
-.box p {
-  text-align: center;
-  font-size: 16px;
-  margin-left: 19px;
-  font-weight: 300;
+  margin-top: -90px;
 }
 
 .passage {
-  line-height: 25px;
-  font-weight: bolder;
-
+  text-align: justify;
+  margin-left: 30px;
+  width: 95%;
+  margin-top: -30px;
 }
 
-.info {
-  display: flex;
-  align-items: center;
-  margin: 0px 25px;
-}
-
-.box h4 {
+.title {
   text-align: center;
-  font-weight: 399;
-  margin-bottom: 25px;
-  /*margin-right: 110px;*/
-  white-space: nowrap;
-  margin-top: 10px;
-}
-
-.admin {
-  margin-left: 255px;
-  transition: all 1s ease;
-  position: absolute;
-  top: 300px;
-  background: yellow;
-  padding: 5px 10px;
-  border-radius: 7px;
-  transition: 1s;
-}
-
-.date {
-  margin-left: 15px;
-  background: deepskyblue;
-  padding: 5px 10px;
-  border-radius: 7px;
-  width: 140px;
-  transition: 1s;
-}
-
-.date:hover {
-  transform: scale(0.9);
-}
-
-.admin:hover{
-  font-family: 600;
-  transform: scale(0.9);
-}
-
-.box h4 a{
-  color: lime;
-}
-
-
-.rm {
-  background: var(--main-color);
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border-radius: 7px;
-  text-align: center;
-  padding: 7px;
-  position: absolute;
-  left: 30px;
-  margin-top: 20px;
-  transition: .75s;
-}
-.rm:hover {
-  transform: scale(0.9);
-  background: white;
-  color: var(--main-color);
-}
-
-.navbar {
-  position: absolute;
-  top: 15px;
-  left: 10%;
-}
-
-.resp-posts {
+  margin-left: 14px;
   margin-top: 30px;
+  display: inline-block;
 }
+
 footer {
   margin-left: 6.5%;
   margin-top: 30px;
   position: absolute;
-  
+
 }
+
 footer span {
   color: var(--main-color);
 }
@@ -339,9 +262,9 @@ footer .social-media {
 }
 
 .sm {
-  width: 170px;
+  width: 120px;
   border-radius: 7px;
-  border: 1px solid deepskyblue;
+  border: 1px dotted lime;
   color: white;
   margin-top: 35px;
   font-weight: 400;
@@ -349,13 +272,13 @@ footer .social-media {
   padding: 3px;
   background: yellow;
   color: black;
-  font-family: 'Times New Roman', Times, serif;
   white-space: nowrap;
 }
 
 .social-media a {
   margin-right: 15px;
 }
+
 .social-media a i {
   background: var(--main-color);
   width: 40px;
@@ -373,11 +296,94 @@ footer .social-media {
   color: var(--main-color);
 }
 
+.social-media a {
+  margin-right: 15px;
+}
+
+.social-medias a i {
+  background: var(--main-color);
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all .7s ease;
+  margin-right: 20px;
+}
+
+.social-medias a i:hover {
+  background: white;
+  color: var(--main-color);
+}
+
+
 .contact-us {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-right: 10px;
+}
+
+.date-admin {
+  margin-left: 15px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  width: 80px;
+  transition: 1s;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-admin p{
+  background: deeppink;
+  padding: 7px;
+  border-radius: 7px;
+  transition: 1s;
+  color: black;
+  margin-left: -.5rem;
+  color: white;
+  font-weight: 300;
+}
+
+.date-admin h5 a {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 10.5rem;
+  background: yellow;
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: 1s;
+  color: black;
+  font-weight: 400;
+}
+
+.date-admin h5 {
+  margin-top: 8%;
+  transition: 1s;
+}
+
+.date-admin h5:hover{
+  transform: scale(0.9);
+}
+
+.date-admin p:hover{
+  transform: scale(0.9);
+}
+
+.topic {
+  text-align: center;
+  margin-left: 5%;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 5%;
+}
+
+.admin h5 {
+  color: black;
 }
 
 #msg::placeholder {
@@ -388,7 +394,7 @@ footer .social-media {
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid limegreen;
+  border: 1px solid lime;
   width: 95%;
   margin-right: 7px;
   background: black;
@@ -430,7 +436,6 @@ footer .social-media {
     display: block;
     font-size: 35px;
   }
-
   .navlist {
     position: absolute;
     top: -1000px;
@@ -468,55 +473,141 @@ footer .social-media {
   }
 
   .posts {
-    margin-top: 250px;
+    margin-top: 100px;
+  }
+  .passage{
+    max-width: 94%;
+    margin-left: 3%;
+    font-weight: 400;
+    font-family: monospace;
+    font-size: 16px;
+  }
+  .social-medias {
+    display: none;
   }
 }
 
 
-
-@media(min-width: 843px) {
+@media(min-width: 980px){
   .posts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 500px;
+    margin-top: 600px;
   }
+  
   .box {
     margin: 30px;
     width: 250px;
   }
+
   .box img {
-    width: 290px;
+    width: 450px;
+    height: 350px;
     border-radius: 15px;
   }
+
   .box p {
     margin-left: 35px;
+
     text-align: center;
   }
+
   .admin {
-    margin-left: 207px;
+    margin-left: 230px;
   }
+
   .navbar {
     position: absolute;
-    top: 10%;
-    left: 29%;
+    top: 30%;
+    left: 20%;
     font-size: 25px;
   }
+
   .navbar #anime {
     font-size: 22px;
+    margin-top: -350px;
+    margin-left: 550px;
   }
+
   footer {
     margin-top: 100px;
   }
+
+  .passage {
+    font-size: 7px;
+    line-height: 1.6;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: justify;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  .title {
+    position: absolute;
+    width: 140%;
+    height: 100%;
+    left: 500px;
+    top: -90px;
+  }
+
   .goto-top {
     bottom: 100px;
   }
+  .date {
+    position: absolute;
+    top: 51%;
+    left: 67%;
+  }
+  .title1 {
+    display: none;
+  }
+  .topic {
+    position: absolute;
+    left: 530px;
+    top: 35px;
+    width: 100%;
+  }
+  .social-medias {
+    margin-left: 200px;
+    display: flex;
+    top: 48%;
+    left: 350px;
+    position: absolute;
+  }
+  .date-admin h5 {
+    margin-right: -350px;
+  }
+  .date-admin p {
+    margin-left: 5px;
+  }
 }
 
+
 @media (orientation: landscape) {
+  .navbar {
+    z-index: 100;
+    position: absolute;
+    top: 380px;
+    display: block;
+  }
   .posts {
-    margin-top: 330px;
+    margin-top: 500px;
   }
   header {
-    margin-top: 100px;
+    margin-top: 170px;
+  }
+  .social-medias {
+    position: absolute;
+    top: 700px;
+  }
+  .passage {
+    font-size: clamp(16px, 19px, 32px);
+  }
+}
+
+@media (orientation: portrait) {
+  .passage {
+    font-size: clamp(16px, 17px, 22px);
   }
 }

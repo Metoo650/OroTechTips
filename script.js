@@ -1,4 +1,3 @@
-const navlist = document.querySelector(".navlist");
 const menu = document.querySelector("#menu-icon");
 const header = document.querySelector("header");
 const posts = document.querySelector(".posts");
@@ -9,7 +8,7 @@ const data = [
   {
     img: "images/avenue.jpg",
     title: `<a href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
-    date: `7/8/2023`,
+    date: `March 7 2023`,
     admin: "Owner",
     desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
     link: "gpt.html",
@@ -17,18 +16,18 @@ const data = [
   {
     img: "images/avenue.jpg",
     title: `<a href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
-    date: `7/8/2023`,
+    date: `March 7 2023`,
     admin: "Owner",
     desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
-    link: "https://yourlink.com/",
+    link: "gpt.html",
   },
   {
     img: "images/avenue.jpg",
     title: `<a href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
-    date: `7/8/2023`,
+    date: `March 7 2023`,
     admin: "Owner",
     desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
-    link: "https://yourlink.com/",
+    link: "gpt.html",
   }
   ]
   
@@ -56,14 +55,18 @@ data.forEach(i=>{
   let dateA = document.createElement("a");
   dateA.innerHTML = i.date;
   dateA.href = "hi.com"
-  dateA.style.color = "white";
+  date.innerHTML=`<i class="bx bx-calendar"></i>`
+  dateA.style.color = "black";
+  dateA.style.marginLeft="5px"
   date.appendChild(dateA);
   box.appendChild(date);
   let admin = document.createElement("h4");
   admin.setAttribute("class", "admin");
   let adminA = document.createElement("a");
   adminA.innerHTML = i.admin;
+  admin.innerHTML=`<i style="color: red" class="bx bxs-conversation"></i>`
   adminA.href = "t.me/"
+  adminA.style.marginLeft = "5px"
   adminA.style.color = "black";
   admin.appendChild(adminA);
   //admin.innerHTML = i.admin;
@@ -77,12 +80,13 @@ data.forEach(i=>{
   desA.innerHTML = i.desc;
   let desrm = document.createElement("a");
   desrm.href = i.link;
-  desrm.innerHTML = "Read More"
+  desrm.innerHTML = `<i style="color: black; font-size: 17px;" class="bx bx-book-reader"></i> Read More`
   des.appendChild(desrm);
   desrm.setAttribute("class", "rm");
   desrm.style.marginTop = "45px";
 })
 
+const navlist = document.querySelector(".navlist");
 
 randomPosts = ["style.css", "script.js", "index.html"]
 
@@ -97,11 +101,10 @@ if (header.style.top <= -20) {
 }
 
 menu.addEventListener("click", () => {
+  posts.classList.toggle("resp-posts");
+  menu.classList.toggle("bx-x");
   navlist.classList.toggle("menu-show");
-  posts.classList.toggle("resp-posts")
-  menu.classList.toggle("bx-x")
-  menu.style.fontSize ="36px"
-  posts.style.marginLeft = "5px"
+  menu.style.fontSize ="36px";
 })
 
 window.onscroll = () => {
@@ -116,7 +119,7 @@ searchGoogle.addEventListener("click", (e)=>{
 })
 
 var options = {
-  strings: ['<a style="color: lime; font-size: 20px; font-weight: 400;" href="style.css">ChatGPT: The Chatbot which can......</a>','<a style="color: white; font-size: 17px; font-weight: 400;" href="style.css">ChatGPT: The Chatbot which can......</a>'],
+  strings: ['<a style="color: lime; font-size: 16px; font-weight: 400; font-family: monospace;" href="style.css">ChatGPT: The Chatbot which can......</a>','<a style="color: white; font-size: 17px; font-weight: 400;" href="style.css">ChatGPT: The Chatbot which can......</a>'],
   typeSpeed: 200,
   backSpeed: 100,
   loop: true
