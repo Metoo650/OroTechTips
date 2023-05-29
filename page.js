@@ -30,7 +30,7 @@ window.onscroll = () => {
 }
 
 var options = {
-  strings: ['<a style="color: lime; font-size: 20px; font-weight: 400;" href="style.css">ChatGPT: The Chatbot which can......</a>','<a style="color: white; font-size: 17px; font-weight: 400;" href="style.css">ChatGPT: The Chatbot which can......</a>'],
+  strings: ['<a style="color: lime; font-size: 17px; font-weight: 400; margin-top: 7px; margin-left: 27px;" href="style.css">ChatGPT: The Chatbot which can......</a>','<a style="color: lime; font-size: 17px; font-weight: 400; margin-top: 7px; margin-left: 27px;" href="style.css">ChatGPT: The Chatbot which can......</a>'],
   typeSpeed: 200,
   backSpeed: 100,
   loop: true

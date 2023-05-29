@@ -7,7 +7,7 @@ const shuffle = document.getElementById("shuffle");
 const data = [
   {
     img: "images/avenue.jpg",
-    title: `<a href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
     date: `March 7 2023`,
     admin: "Owner",
     desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
@@ -15,7 +15,7 @@ const data = [
   },
   {
     img: "images/avenue.jpg",
-    title: `<a href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
     date: `March 7 2023`,
     admin: "Owner",
     desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
@@ -23,7 +23,55 @@ const data = [
   },
   {
     img: "images/avenue.jpg",
-    title: `<a href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    date: `March 7 2023`,
+    admin: "Owner",
+    desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
+    link: "gpt.html",
+  },
+  {
+    img: "images/avenue.jpg",
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    date: `March 7 2023`,
+    admin: "Owner",
+    desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
+    link: "gpt.html",
+  },
+  {
+    img: "images/avenue.jpg",
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    date: `March 7 2023`,
+    admin: "Owner",
+    desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
+    link: "gpt.html",
+  },
+  {
+    img: "images/avenue.jpg",
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    date: `March 7 2023`,
+    admin: "Owner",
+    desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
+    link: "gpt.html",
+  },
+  {
+    img: "images/avenue.jpg",
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    date: `March 7 2023`,
+    admin: "Owner",
+    desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
+    link: "gpt.html",
+  },
+  {
+    img: "images/avenue.jpg",
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
+    date: `March 7 2023`,
+    admin: "Owner",
+    desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
+    link: "gpt.html",
+  },
+  {
+    img: "programming.jpg",
+    title: `<a style='color: lime; font-family: serif; font-weight: bolder;' href='https://www.google.com'> ChatGPT: </a>Asking Questions Platform!`,
     date: `March 7 2023`,
     admin: "Owner",
     desc: "it is the chatbot released in 2023 and developed by OpenAI Company! in addition, Its powerful! what meant by this is it can answer different Questions! To check it out, press the  button below",
@@ -45,6 +93,8 @@ data.forEach(i=>{
   const aSearch = document.createElement("a");
   title.appendChild(aSearch);
   aSearch.innerHTML = i.title;
+  aSearch.style.color = "orange"
+  aSearch.style.fontFamily = "serif"
   box.appendChild(title)
   aSearch.setAttribute("id", "googleit");
   const info = document.createElement("div");
@@ -56,7 +106,9 @@ data.forEach(i=>{
   dateA.innerHTML = i.date;
   dateA.href = "hi.com"
   date.innerHTML=`<i class="bx bx-calendar"></i>`
-  dateA.style.color = "black";
+  dateA.style.color = "#fff";
+  dateA.style.fontFamily = `serif`
+  date.style.marginTop = "21px"
   dateA.style.marginLeft="5px"
   date.appendChild(dateA);
   box.appendChild(date);
@@ -67,6 +119,7 @@ data.forEach(i=>{
   admin.innerHTML=`<i style="color: red" class="bx bxs-conversation"></i>`
   adminA.href = "t.me/"
   adminA.style.marginLeft = "5px"
+  admin.style.marginTop = "48px"
   adminA.style.color = "black";
   admin.appendChild(adminA);
   //admin.innerHTML = i.admin;
@@ -80,10 +133,11 @@ data.forEach(i=>{
   desA.innerHTML = i.desc;
   let desrm = document.createElement("a");
   desrm.href = i.link;
+  des.style.marginTop = "45px"
   desrm.innerHTML = `<i style="color: black; font-size: 17px;" class="bx bx-book-reader"></i> Read More`
   des.appendChild(desrm);
   desrm.setAttribute("class", "rm");
-  desrm.style.marginTop = "45px";
+  desrm.style.marginTop = "50px";
 })
 
 const navlist = document.querySelector(".navlist");
